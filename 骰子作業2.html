@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .box {
+        /* 配合螢幕彈性伸縮 */
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+
+        /* 空間不足會並排 */
+        flex-wrap: wrap;
+        margin: 20%;
+    }
+
+    .dice {
+        position: relative;
+        display: flex;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(214, 208, 208);
+        box-shadow: #000 outline 10px;
+        background-image: linear-gradient(45deg, rgb(84, 83, 83), rgb(217, 217, 217), white);
+        margin: 10px;
+        border-radius: 10%;
+    }
+
+
+    span {
+        width: 20px;
+        height: 20px;
+        background-color: #000;
+        border-radius: 50px 50px;
+    }
+
+    .circle_1 {
+        /* 物件置中 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+    }
+
+    .circle_2 {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+
+
+    .circle_3 {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+    }
+
+
+    .circle_4 {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+
+    }
+
+
+    .circle_5 {
+        position: absolute;
+        top: 40%;
+        right: 10%;
+    }
+
+
+
+    .circle_6 {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+    }
+
+    .circle_7 {
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="dice">
+            <span style="background-color: rgb(227, 29, 29);" class="circle_1"></span>
+        </div>
+
+        <div class="dice">
+            <span class="circle_2"></span>
+            <span class="circle_7"></span>
+        </div>
+
+
+        <div class="dice">
+            <span class="circle_1"></span>
+            <span class="circle_2"></span>
+            <span class="circle_7"></span>
+        </div>
+
+
+
+        <div class="dice">
+            <span style="background-color: rgb(227, 29, 29);" class="circle_2"></span>
+            <span style="background-color: rgb(227, 29, 29);" class="circle_3"></span>
+            <span style="background-color: rgb(227, 29, 29);" class="circle_6"></span>
+            <span style="background-color: rgb(227, 29, 29);" class="circle_7"></span>
+        </div>
+
+
+
+
+        <div class="dice">
+            <span class="circle_1"></span>
+            <span class="circle_2"></span>
+            <span class="circle_3"></span>
+            <span class="circle_6"></span>
+            <span class="circle_7"></span>
+        </div>
+
+
+
+        <div class="dice">
+            <span class="circle_2"></span>
+            <span class="circle_3"></span>
+            <span class="circle_4"></span>
+            <span class="circle_5"></span>
+            <span class="circle_6"></span>
+            <span class="circle_7"></span>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
